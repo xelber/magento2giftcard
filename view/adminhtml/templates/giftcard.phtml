@@ -1,0 +1,7 @@
+<?php
+/** @var  $this \Retailexpress\Giftcard\Block\Adminhtml\Order\View\GiftcardPayment **/
+?>
+<?php if ( $this->isGiftCardOrder() ) { ?>
+	<h2>This order was paid with gift card </h2>
+	<h3>Gift card amount : <?php echo number_format($this->getGiftCardAmount(), 2) ?> </h3>
+<?php } ?>
